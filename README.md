@@ -6,7 +6,6 @@ A Role-Based Access Control (RBAC) system implemented using the **MERN Stack** (
 
 ## Features
 
-- **Role Management**: Create, update, and delete roles.
 - **Permission Management**: Assign specific permissions to roles.
 - **User Management**: Assign roles to users manually.
 - **Authentication**: Secure user authentication using JWT.
@@ -50,6 +49,21 @@ A Role-Based Access Control (RBAC) system implemented using the **MERN Stack** (
 3. Install frontend dependencies:
    ```bash
    cd client
-   npm install   
-
-  
+   npm install
+    
+4. Set up environment variables:
+   Create a ```.env``` file in the backend directory with the following:
+   ```bash
+   MONGO_URI=your-mongodb-connection-string
+   JWT_SECRET=your-jwt-secret
+   PORT=5000
+   
+5. Start the development server:
+   * Backend:
+      ```bash
+      cd server
+      npm run dev
+   * Frontend:
+     ```bash
+     cd client
+     npm run dev
